@@ -1,0 +1,122 @@
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+    --grisaseo: #c8cbce;
+
+    --tipo-letra: 'Krub', sans-serif;
+}
+
+/* Unidad de Medida
+16px = 1rem
+32px = 2rem
+
+16px = 1rem
+10px - x?
+
+x=(10px)(1rem)/(16px)
+x= 62.5%*/
+/* 
+480 px Celulares
+768 px tablets 
+1140 px laptop
+1440 px pantallas 
+*/
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; /*Box Model*/
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    font-size: 16px; /* 1rem  */
+    font-family: var(--tipo-letra);
+   
+    background-image: linear-gradient(to top,rgb(251, 251, 253));
+}
+
+h1{
+    font-size: 3.8;
+    text-align: center;
+    }
+
+.contenedor{
+    max-width: 120rem;
+  /*   margin-top: 0rem;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto; */
+   /*  margin: 0 auto; */ /* Centra el contenido */
+   border: #212121;
+   
+}
+
+
+/* esta de aqui es una utilidad */
+.nav-bg{
+    background-color: var(--grisaseo);
+
+}
+
+.nav-bg2{
+    background-color: var(--blanco);
+}
+
+.w-100{
+    width: 100%;
+}
+
+.navegacion-principal{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navegacion-principal2{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.navegacion-principal a{
+    color: var(--oscuro);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;  /* 700 */
+    padding: 1rem;
+    
+}
+.navegacion-principal2 a{
+    color: var(--oscuro);
+    text-decoration: none;
+    font-size: 2rem;
+    
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.navegacion-principal2 p{
+    color: var(--oscuro);
+    text-decoration: none;
+    font-size: 2rem;
+    
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+    .navegacion-principal{
+        flex-direction: row;
+    }
+
+    .navegacion-principal2{
+        flex-direction: row;
+    }
